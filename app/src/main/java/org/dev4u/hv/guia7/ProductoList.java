@@ -111,8 +111,8 @@ public class ProductoList extends AppCompatActivity {
     private void seleccionar(Producto producto){
         producto_temp = producto;
         lblId_Prod.setText(producto_temp.getId_producto());
-        txtDescripcion.setText(producto_temp.getNombre());
-        txtNombre_prod.setText(producto_temp.getDescripcion());
+        txtDescripcion.setText(producto_temp.getDescripcion());
+        txtNombre_prod.setText(producto_temp.getNombre());
     }
     private void limpiar(){
         lblId_Prod.setText(null);
