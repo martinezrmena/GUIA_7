@@ -100,7 +100,7 @@ public class ProductoList extends AppCompatActivity {
     }
     private void btnEliminarOnClick(){
         if(producto_temp!=null){
-            db.borrarProducto(producto_temp.getId_categoria());
+            db.borrarProducto(producto_temp.getId_producto());
             lstProductos.remove(producto_temp);
             adaptadorProducto.notifyDataSetChanged();
             producto_temp = null;
@@ -110,7 +110,7 @@ public class ProductoList extends AppCompatActivity {
     }
     private void seleccionar(Producto producto){
         producto_temp = producto;
-        lblId_Prod.setText(producto_temp.getId_categoria());
+        lblId_Prod.setText(producto_temp.getId_producto());
         txtDescripcion.setText(producto_temp.getNombre());
         txtNombre_prod.setText(producto_temp.getDescripcion());
     }
